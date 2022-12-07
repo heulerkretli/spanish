@@ -24,8 +24,8 @@
     <style type="text/css">
         header {
             color: white;
-            background-image: url("assets/img/bg.jpeg");
-            background-color: rgba(0, 0, 0, 0.6);
+            background-image: rgb(8, 0, 45);
+            background-color: rgb(8, 0, 45);
             background-position: center;
             background-size: cover;
             background-attachment: fixed;
@@ -38,65 +38,65 @@
 <body>
     <header class="py-4">
         <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-              
-  <!--IMAGEM-->
-              <img class="img-fluid" src="./assets/img/ultrasecreto.svg">
-  
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
 
-    <!--HEADLINE-->
-    <h3><b><span style="color:#FE0000"><span id="number"></span></span> la gente está viendo este video. Debido a la
-            gran
-            demanda de accesos, garantizamos la presentación sólo hasta <span style="color:#FE0000"><span
-                    id="descounttime"></span></span></b></h3>
+                    <!--IMAGEM-->
+                    <img class="img-fluid" src="./assets/img/ultrasecreto.svg">
 
-    <script language="javascript">
-        var getdayMonth = new Array("01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12");
-        var getNow = new Date();
-        var dayOfTheWeek = getNow.getDay();
-        getNow.setTime(getNow.getTime() - 0 * 24 * 60 * 60 * 1000);
-        document.getElementById("descounttime").innerHTML = getNow.getDate() + "/" + getdayMonth[(getNow.getMonth())] + "/" + getNow.getFullYear();
-    </script>
+                    <!--HEADLINE-->
+                    <h3><b><span style="color:#FE0000"><span id="number"></span></span> la gente está viendo este video.
+                            Debido a la
+                            gran
+                            demanda de accesos, garantizamos la presentación sólo hasta <span
+                                style="color:#FE0000"><span id="descounttime"></span></span></b></h3>
 
-    <script>
-        function add() { number += Math.floor((Math.random() * 6) + 1); document.getElementById("number").innerHTML = number; setTimeout("add()", 10000); }
-        function generate() { number = Math.floor(Math.random() * 11) + 11; document.getElementById("number").innerHTML = number; add(); }
-        generate();
-    </script>
+                    <script language="javascript">
+                        var getdayMonth = new Array("01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12");
+                        var getNow = new Date();
+                        var dayOfTheWeek = getNow.getDay();
+                        getNow.setTime(getNow.getTime() - 0 * 24 * 60 * 60 * 1000);
+                        document.getElementById("descounttime").innerHTML = getNow.getDate() + "/" + getdayMonth[(getNow.getMonth())] + "/" + getNow.getFullYear();
+                    </script>
 
-    <!--VSL-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.9/plyr.min.css"
-        integrity="sha512-9NS6wyLGVddfu8MvjH2muvHT+3lPxYifn5SDMigU+cgsQY91MTP72x8OpbnK9ucbjfZc6TMP3hajTCFrvFWxxg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+                    <script>
+                        function add() { number += Math.floor((Math.random() * 6) + 1); document.getElementById("number").innerHTML = number; setTimeout("add()", 10000); }
+                        function generate() { number = Math.floor(Math.random() * 11) + 11; document.getElementById("number").innerHTML = number; add(); }
+                        generate();
+                    </script>
 
-    <style>
-        .plyr {
-            border: 10px solid #ffffff;
-            border-radius: 10px;
-        }
+                    <!--VSL-->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.9/plyr.min.css"
+                        integrity="sha512-9NS6wyLGVddfu8MvjH2muvHT+3lPxYifn5SDMigU+cgsQY91MTP72x8OpbnK9ucbjfZc6TMP3hajTCFrvFWxxg=="
+                        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        .plyr iframe {
-            transition: 0.2s filter linear;
-        }
+                    <style>
+                        .plyr {
+                            border: 10px solid #ffffff;
+                            border-radius: 10px;
+                        }
 
-        .plyr.plyr--paused iframe {
-            filter: blur(1.5rem);
-        }
-    </style>
+                        .plyr iframe {
+                            transition: 0.2s filter linear;
+                        }
 
-    <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="ysPpYVJ3OVw"></div>
+                        .plyr.plyr--paused iframe {
+                            filter: blur(1.5rem);
+                        }
+                    </style>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.9/plyr.min.js"
-        integrity="sha512-Wt3CCBrK4mMw9PUEzDpKPMN7cLCq7/Uu7vxRtG+EQv+DO9Yae/LKSQTfziDj51y1yeSqqLt142lNyJtBXG/gSw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                    <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="ysPpYVJ3OVw"></div>
 
-    <script>
-        var player = new Plyr('#player', {
-            controls: ['play-large', 'play'],
-            fullscreen: { enabled: false, fallback: true, iosNative: false, container: null }
-        });
-    </script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.9/plyr.min.js"
+                        integrity="sha512-Wt3CCBrK4mMw9PUEzDpKPMN7cLCq7/Uu7vxRtG+EQv+DO9Yae/LKSQTfziDj51y1yeSqqLt142lNyJtBXG/gSw=="
+                        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+                    <script>
+                        var player = new Plyr('#player', {
+                            controls: ['play-large', 'play'],
+                            fullscreen: { enabled: false, fallback: true, iosNative: false, container: null }
+                        });
+                    </script>
 
 </body>
 
