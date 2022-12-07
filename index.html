@@ -43,29 +43,11 @@
 
                     <!--IMAGEM-->
                     <img class="img-fluid" src=".assets/img/010203.png">
+                    
+                    <!--HEADLINE-->   
+                    <h1>Secreto Tropical Disuelve 
+                        La Grasa Durante La Noche</h1>
 
-                    <!--HEADLINE-->
-                    <h6><b><span style="color:#FE0000"><span id="number"></span></span> la gente está viendo este video.
-                            Debido a la
-                            gran
-                            demanda de accesos, garantizamos la presentación sólo hasta <span
-                                style="color:#FE0000"><span id="descounttime"></span></span></b></h6>
-
-                    <script language="javascript">
-                        var getdayMonth = new Array("01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12");
-                        var getNow = new Date();
-                        var dayOfTheWeek = getNow.getDay();
-                        getNow.setTime(getNow.getTime() - 0 * 24 * 60 * 60 * 1000);
-                        document.getElementById("descounttime").innerHTML = getNow.getDate() + "/" + getdayMonth[(getNow.getMonth())] + "/" + getNow.getFullYear();
-                    </script>
-
-                    <script>
-                        function add() { number += Math.floor((Math.random() * 6) + 1); document.getElementById("number").innerHTML = number; setTimeout("add()", 10000); }
-                        function generate() { number = Math.floor(Math.random() * 11) + 11; document.getElementById("number").innerHTML = number; add(); }
-                        generate();
-                    </script>
-                    <br>
-                    <br>
                     <br>
                     <!--VSL-->
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.9/plyr.min.css"
@@ -74,7 +56,7 @@
 
                     <style>
                         .plyr {
-                            border: 8px solid #ffffff;
+                            border: 5px solid #ffffff;
                             border-radius: 5px;
                         }
 
@@ -98,6 +80,27 @@
                             controls: ['play-large', 'play'],
                             fullscreen: { enabled: false, fallback: true, iosNative: false, container: null }
                         });
+                    </script>
+
+                    <!--HEADLINE2-->
+                    <h6><b><span style="color:#FE0000"><span id="number"></span></span> la gente está viendo este video.
+                        Debido a la
+                        gran
+                        demanda de accesos, garantizamos la presentación sólo hasta <span
+                            style="color:#FE0000"><span id="descounttime"></span></span></b></h6>
+                                
+                    <script language="javascript">
+                        var getdayMonth = new Array("01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12");
+                        var getNow = new Date();
+                        var dayOfTheWeek = getNow.getDay();
+                        getNow.setTime(getNow.getTime() - 0 * 24 * 60 * 60 * 1000);
+                        document.getElementById("descounttime").innerHTML = getNow.getDate() + "/" + getdayMonth[(getNow.getMonth())] + "/" + getNow.getFullYear();
+                    </script>
+
+                    <script>
+                        function add() { number += Math.floor((Math.random() * 6) + 1); document.getElementById("number").innerHTML = number; setTimeout("add()", 10000); }
+                        function generate() { number = Math.floor(Math.random() * 11) + 11; document.getElementById("number").innerHTML = number; add(); }
+                        generate();
                     </script>
 
                     <!--BOTÃO 1-->
