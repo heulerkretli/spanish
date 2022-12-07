@@ -36,11 +36,7 @@
 </head>
     
 <body>
-    
-    <footer class="bg-dark py-3 text-center">
-        <div class="text-white">¡ATENCIÓN: CONTENIDO PROHIBIDO EN MÁS DE 13 PAÍSES!</a></div>
-    </footer>
-    
+
     <header class="py-4">
         <div class="container">
             <div class="row justify-content-center">
@@ -118,6 +114,13 @@
     </header>
 
     <section class="comments py-4">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>$.get("https://ipinfo.io/json", function (response) { $("#address").html(response.city);
+}, "jsonp");
+</script>
+
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -138,8 +141,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="fb-comments-comment-text">Amei vou fazer hoje mesmo pois estou em
-                                            processo de emagrecimento. Muito obrigada 😘</td>
+                                        <td class="fb-comments-comment-text">Chicas, valió mucho la pena verlo hasta el final, mis amigos aquí en <span id="address" style="color:#000000;">Salvador</span> están locos con mi resultado, mi esposo no deja de elogiarme. 😘</td>
                                     </tr>
                                     <tr>
                                         <td class="fb-comments-comment-actions">
