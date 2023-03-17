@@ -21,25 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/com.css">
     <link rel="prerender" href="https://pay.hotmart.com/W75115719G?checkoutMode=10"/>
-    
-    <!-- COOKIES -->
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
-    
-    <!-- START Bootstrap-Cookie-Alert -->
-<div class="alert text-center cookiealert" role="alert">
-    <b>¿Te gustan las cookies?</b> &#x1F36A; Utilizamos cookies para garantizar que obtenga la mejor experiencia en nuestro sitio web. <a href="https://vivasaludable.online/privacidade.html" target="_blank">Aprende más</a>
-
-    <button type="button" class="btn btn-primary btn-sm acceptcookies">
-        Estoy de acuerdo
-    </button>
-</div>
-<!-- END Bootstrap-Cookie-Alert -->
-    
-    <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
-    
-    <!-- COOKIES END --> 
-    
+        
     <!-- Ícone da Página -->
     <link rel="shortcut icon" type="image/jpg" href="/assets/img/favicon.png">
 
@@ -57,6 +39,22 @@
             background-blend-mode: darken;
         }
     </style>
+    
+     <script type="text/javascript">
+    var back_redirect_back_link = '/redirect'+ location.search;
+    // Não altere daqui para baixo
+    history.pushState({}, "", location.href);
+    history.pushState({}, "", location.href);
+
+    window.addEventListener('popstate', function (event) {
+        if (event.state) {
+            setTimeout(function () {
+             
+                location.href = back_redirect_back_link;
+            }, 1);
+        }
+    }, false);
+</script>
 
 </head>
 
